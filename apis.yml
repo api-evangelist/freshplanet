@@ -1,7 +1,28 @@
 aid: freshplanet
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/freshplanet.png
 name: FreshPlanet
-description: FreshPlanet is a company surfaced as a portfolio company of uncork-capital and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  FreshPlanet Inc. is a New York City based mobile game developer, headquartered
+  at 200 Hudson St, New York, NY 10013, best known for the music trivia franchise
+  SongPop. The studio builds free-to-play mobile entertainment titles for iOS and
+  Android, combining licensed music catalogs, social multiplayer play, and live
+  events. FreshPlanet is a portfolio company of Uncork Capital. As a consumer game
+  studio it does not operate a public developer program or API: it exposes only a
+  marketing site, player support via a Zendesk help center, and standard legal
+  surfaces (Terms of Use and Privacy Policy). This profile captures the studio's
+  real public web and legal footprint for the API Evangelist network; there is no
+  OpenAPI, SDK, or agent surface to enrich because the company publishes none.
 url: https://raw.githubusercontent.com/api-evangelist/freshplanet/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,34 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Mobile Games
+- Gaming
+- Entertainment
+- Music
+- Consumer Apps
+- New York
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/freshplanet-domain-security.yml
+- type: Website
+  url: https://freshplanet.com
+- type: Support
+  url: https://songpop2.zendesk.com/hc/en-us
+- type: TermsOfService
+  url: https://freshplanet.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.freshplanet.com/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

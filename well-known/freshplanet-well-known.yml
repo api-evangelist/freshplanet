@@ -1,0 +1,20 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of https://freshplanet.com/.well-known/*
+host: https://freshplanet.com
+note: >-
+  FreshPlanet operates a consumer marketing site only; every /.well-known/
+  path 301-redirects to the www host and then returns 404. No discovery
+  documents are published. Recorded for auditability; no WellKnown pointer
+  wired because nothing was found (absence is valid data).
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
